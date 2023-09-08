@@ -8,11 +8,12 @@ class Solution:
             digit = x % 10
             list_num.insert(0, digit) 
             x //= 10
-
-        for i in range(len(list_num)):
-            if list_num[i] != list_num[-i-1]:
-                return False
-
+        if x < 0: 
+            return False
+        else:
+            for i in range(len(list_num)):
+                if list_num[i] != list_num[-i-1]:
+                    return False
         return True
 
 obj = Solution()
