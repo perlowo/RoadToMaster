@@ -10,8 +10,10 @@ class Solution:
             else:
                 pass
         k = len(output)
-        print(output)
-        return k, output
+        # print(output)
+        nums.clear()
+        nums.extend(output)
+        return k
 
 num = [0,1,2,2,3,0,4,2]
 print(Solution().removeElement(num, 2))
