@@ -1,5 +1,5 @@
 class Solution:
-    def romanToInt(s: str) -> int:
+    def romanToInt(self, s: str) -> int:
         roman_values = {
         'I': 1,
         'V': 5,
